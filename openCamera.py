@@ -7,9 +7,11 @@ while(True):
     # Capture frame-by-frame
     ret, frame = cap.read()
 
+   # gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
     # Display the resulting frame
     cv2.imshow('frame',frame)
-    if cv2.waitKey(20) & 0xFF == ord(""):
+    if cv2.waitKey(20) & 0xFF == ord(' '):
         break
 
 # When everything done, release the capture
